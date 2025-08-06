@@ -189,3 +189,31 @@ p {
     width: 95vw;
   }
 }
+
+/* code */
+
+/* header */
+.mech-section {
+  height: 10vh;
+  width: 100vw;
+  background: var(--clr-orangeColor-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 4rem;
+}
+.logo {
+  max-width: 5rem;
+}
+.mech-welcome {
+  font-size: 1.5rem;
+  font-family: var(--primaryFont);
+}
+.mech-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
