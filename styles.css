@@ -415,24 +415,45 @@ h3:hover {
   letter-spacing: 0.85px;
   text-transform: capitalize;
 }
-.anni-img {
+.anniversary {
   margin: 4rem 0;
+  transition: var(--transition);
+}
+.anniversary:hover {
+  /* box-shadow: var(--dark-shadow); */
+  transform: translatex(2rem);
 }
 
+/* expert */
+
 .expert-container {
-  background: var(--GrayColor-3);
-  margin: 3rem 0;
+  background: var(--clr-secondaryColor-5);
+  margin: 5rem auto;
+  max-width: 30rem;
+  transition: var(--transition);
+  box-shadow: var(--light-shadow);
+}
+.expert-container:hover {
+  box-shadow: var(--dark-shadow);
+  transform: translatex(-1rem);
 }
 .expert-title {
   padding: 9px 10px;
-  background: var(--clr-blackColor);
+  background: var(--GrayColor-3);
 }
 .expert-title h4 {
-  color: var(--clr-whiteColor);
+  color: var(--GrayColor-5);
   font-family: var(--secondaryFont);
   font-weight: 400;
   font-size: 1rem;
 }
 .expert-text {
   padding: 20px;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--GrayColor-4);
+}
+.expert-img {
+  object-fit: cover;
 }
