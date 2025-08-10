@@ -203,6 +203,9 @@ a {
 }
 
 /* code */
+.main {
+  height: 100vh;
+}
 .main-header {
   background: linear-gradient(
       rgba(183, 209, 183, 0.3),
@@ -210,6 +213,7 @@ a {
     ),
     url(./images/pexels-tima-miroshnichenko-8327690.jpg) center/cover no-repeat;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 /* header */
@@ -315,6 +319,15 @@ h3:hover {
   width: 3rem;
   height: 0.5rem;
   background: var(--clr-orangeColor-2);
+  border-radius: var(--radius);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.underline-long {
+  width: 100%;
+  height: 0.01rem;
+  background: var(--clr-orangeColor-2);
+  /* border: 2px dashed var(--clr-orangeColor-2); */
   border-radius: var(--radius);
   text-align: center;
   margin-bottom: 2rem;
@@ -428,7 +441,7 @@ h3:hover {
 
 .expert-container {
   background: var(--clr-secondaryColor-5);
-  margin: 5rem auto;
+  margin: 6rem auto;
   max-width: 30rem;
   transition: var(--transition);
   box-shadow: var(--light-shadow);
@@ -453,7 +466,99 @@ h3:hover {
   margin-left: auto;
   margin-right: auto;
   color: var(--GrayColor-4);
+  text-transform: capitalize;
 }
 .expert-img {
   object-fit: cover;
+}
+/* offer session */
+
+.circle {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background: red;
+  position: relative;
+}
+.offer-imgContainer {
+  margin-bottom: 2rem;
+  display: grid;
+  place-items: center;
+}
+.offer-photo {
+  z-index: 2;
+  width: 11rem;
+  position: absolute;
+  transform: translate(5%, 0%);
+}
+.offer-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  /* padding: 2rem 0; */
+}
+.offer-title h3 {
+  margin-left: 1rem;
+  text-align: center;
+}
+.offer {
+  margin: -1rem 0;
+  line-height: 3rem;
+  font-family: var(--secondaryFont);
+  font-size: 15px;
+  color: var(--clr-secondaryColor-4);
+}
+.offer:hover {
+  color: var(--clr-orangeColor-0);
+}
+.offer-list {
+  padding-bottom: 3rem;
+}
+.offer-container {
+  background: var(--GrayColor-3);
+  padding: 2rem 2rem;
+  border: 0.5px dashed var(--clr-secondaryColor-1);
+}
+
+/* footer */
+.footer {
+  background: var(--clr-secondaryColor-4);
+  width: 100vw;
+}
+.footer p {
+  color: white;
+  text-transform: capitalize;
+}
+.single-footer p {
+  transition: var(--transition);
+}
+.single-footer p:hover {
+  color: #734a00;
+}
+.footer-cotainer {
+  letter-spacing: var(--spacing);
+  margin-top: 5rem;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+.information {
+  padding-left: 1rem;
+  letter-spacing: var(--spacing);
+}
+
+.information h3 {
+  color: var(--clr-whiteColor);
+  margin: 2rem 0;
+  font-weight: 400;
+}
+.information p {
+  transition: var(--transition);
+}
+.information p:hover {
+  color: #734a00;
+}
+.footer-sta {
+  color: var(--clr-whiteColor);
+  padding-bottom: 2rem;
 }
