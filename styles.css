@@ -307,9 +307,10 @@ h3:hover {
   color: var(--clr-secondaryColor-3);
   background: var(--clr-orangeColor-1);
   text-align: center;
-  margin: 3rem 0;
+  margin: 3rem auto;
   padding: 1rem 0;
-  /* max-width: 40rem; */
+  border-radius: 1rem;
+  max-width: 40rem;
 }
 
 .click-service:hover {
@@ -335,7 +336,7 @@ h3:hover {
 
 /* categories */
 .main-category {
-  font-family: 'Oleo Script';
+  font-family: var(--primaryFont);
   font-size: 400;
   color: var(--clr-blackColor);
   margin-bottom: 2rem;
@@ -406,6 +407,12 @@ h3:hover {
   position: relative;
   /* transform: translatex(%); */
 }
+@media screen and (min-width: 768px) {
+  .anni-background {
+    width: 17rem;
+    height: 17rem;
+  }
+}
 .anni-bold {
   color: var(--GrayColor-3);
   position: absolute;
@@ -446,6 +453,19 @@ h3:hover {
   transition: var(--transition);
   box-shadow: var(--light-shadow);
 }
+@media screen and (min-width: 768px) {
+  .expert-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .underline-long {
+    margin-top: 2rem;
+  }
+  .extra {
+    display: grid;
+  }
+}
 .expert-container:hover {
   box-shadow: var(--dark-shadow);
   transform: translatex(-1rem);
@@ -471,6 +491,10 @@ h3:hover {
 .expert-img {
   object-fit: cover;
 }
+.extra {
+  display: none;
+}
+
 /* offer session */
 
 .circle {
@@ -522,7 +546,7 @@ h3:hover {
 
 /* footer */
 .footer {
-  background: var(--clr-secondaryColor-4);
+  background: var(--clr-orangeColor-2);
   width: 100vw;
 }
 .footer p {
@@ -537,7 +561,7 @@ h3:hover {
 }
 .footer-cotainer {
   letter-spacing: var(--spacing);
-  margin-top: 5rem;
+  margin-top: 1rem;
   padding-top: 2rem;
   padding-left: 1rem;
 }
@@ -561,4 +585,43 @@ h3:hover {
 .footer-sta {
   color: var(--clr-whiteColor);
   padding-bottom: 2rem;
+}
+
+.languages {
+  padding-left: 1rem;
+  letter-spacing: var(--spacing);
+}
+.lanuages p {
+  transition: var(--transition);
+}
+.languages p:hover {
+  color: #734a00;
+}
+
+.footer-img {
+  max-width: 15rem;
+}
+.share-icon h4 {
+  text-align: center;
+  font-family: var(--secondaryFont);
+  font-weight: 40;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  padding: 2rem 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 30px;
+}
+
+.social-icons a {
+  color: var(--clr-blackColor);
+  transition: var(--transition);
+}
+
+.social-icons a:hover {
+  color: var(--clr-orangeColor-2);
 }
