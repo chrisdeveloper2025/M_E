@@ -248,7 +248,6 @@ a {
 }
 
 .search-container {
-  /* background: red; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -285,7 +284,6 @@ a {
 
 .click-option:hover {
   transform: translatey(0.5rem);
-  /* border: 2px solid var(--clr-secondaryColor-1); */
 }
 
 .click-option,
@@ -343,7 +341,6 @@ h3:hover {
   width: 100%;
   height: 0.01rem;
   background: var(--clr-orangeColor-2);
-  /* border: 2px dashed var(--clr-orangeColor-2); */
   border-radius: var(--radius);
   text-align: center;
   margin-bottom: 2rem;
@@ -488,6 +485,9 @@ h3:hover {
 .anni-highlite p {
   color: var(--clr-secondaryColor-4);
   align-items: center;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  text-align: center;
 }
 
 .anniversary {
@@ -510,16 +510,12 @@ h3:hover {
   .big {
     font-size: 2.6rem;
     color: var(--clr-secondaryColor-0);
-    border: 2px dashed var(--clr-secondaryColor-0);
-    padding: 1rem 1rem;
 
   }
 
   .four {
     font-size: 6rem;
     color: var(--clr-orangeColor-4);
-    /* border: 2px solid var(--clr-secondaryColor-0); */
-    /* padding: 1rem 1rem; */
 
   }
 
@@ -624,7 +620,6 @@ h3:hover {
   text-align: center;
   margin-bottom: 3rem;
   margin-top: 3rem;
-  /* padding: 2rem 0; */
 }
 
 .offer-title h3 {
