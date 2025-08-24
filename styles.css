@@ -80,6 +80,7 @@ img {
   width: 100%;
   display: block;
 }
+
 .search-icon {
   font-size: 2rem;
   background: var(--GrayColor-3);
@@ -165,6 +166,7 @@ p {
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
+
 a {
   text-decoration: none;
 }
@@ -173,6 +175,7 @@ a {
   color: var(--clr-white);
   background: rgb(31, 52, 82);
 }
+
 .section {
   padding: 5rem 0;
 }
@@ -206,11 +209,10 @@ a {
 .main {
   height: 100vh;
 }
+
 .main-header {
-  background: linear-gradient(
-      rgba(183, 209, 183, 0.3),
-      rgba(183, 209, 183, 0.5)
-    ),
+  background: linear-gradient(rgba(183, 209, 183, 0.3),
+      rgba(183, 209, 183, 0.5)),
     url(./images/pexels-tima-miroshnichenko-8327690.jpg) center/cover no-repeat;
   background-attachment: fixed;
   overflow-x: hidden;
@@ -227,13 +229,16 @@ a {
   overflow: hidden;
   padding: 4rem;
 }
+
 .logo {
   max-width: 5rem;
 }
+
 .mech-welcome {
   font-size: 1.5rem;
   font-family: var(--primaryFont);
 }
+
 .mech-area {
   display: flex;
   justify-content: space-between;
@@ -251,6 +256,7 @@ a {
   padding: 3rem 0;
   gap: 0.5rem;
 }
+
 .search-box {
   width: 80%;
   height: 3rem;
@@ -261,6 +267,7 @@ a {
   box-shadow: var(--dark-shadow);
   transition: var(--transition);
 }
+
 .search-box:hover {
   transform: scale(1.02);
 }
@@ -275,10 +282,12 @@ a {
   border-radius: 10px;
   transition: var(--transition);
 }
+
 .click-option:hover {
   transform: translatey(0.5rem);
   /* border: 2px solid var(--clr-secondaryColor-1); */
 }
+
 .click-option,
 h3 {
   font-size: 1rem;
@@ -288,21 +297,25 @@ h3 {
   transition: var(--transition);
   cursor: pointer;
 }
+
 .click-option,
 h3:hover {
   color: var(--BackgroundColor-);
 }
+
 .click-options {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 }
+
 .option-icon {
   color: var(--clr-secondaryColor-3);
   font-size: 2rem;
   margin: 1rem;
   cursor: pointer;
 }
+
 .service-container {
   color: var(--clr-secondaryColor-3);
   background: var(--clr-orangeColor-1);
@@ -316,6 +329,7 @@ h3:hover {
 .click-service:hover {
   background: var(--clr-orangeColor-2);
 }
+
 .underline {
   width: 3rem;
   height: 0.5rem;
@@ -324,6 +338,7 @@ h3:hover {
   text-align: center;
   margin-bottom: 2rem;
 }
+
 .underline-long {
   width: 100%;
   height: 0.01rem;
@@ -342,22 +357,27 @@ h3:hover {
   margin-bottom: 2rem;
   padding: 1.5rem 0;
 }
+
 .category h2 {
   font-family: var(--secondaryFont);
   font-size: 1.2rem;
   letter-spacing: 5px;
 }
+
 .category-container {
   border: 1px solid var(--clr-alterNativeColor);
   border-radius: var(--radius);
   background: var(--GrayColor-3);
 }
+
 .category {
   margin: 1rem 0;
 }
+
 .category-icon {
   color: var(--clr-orangeColor-4);
 }
+
 .category-heading {
   display: flex;
   justify-content: space-between;
@@ -366,6 +386,7 @@ h3:hover {
   padding: 1rem 1rem;
   background: var(--GrayColor-2);
 }
+
 .category-text {
   background: #fff3f3;
   padding: 2rem 2rem;
@@ -381,10 +402,12 @@ h3:hover {
   background: var(--GrayColor-4);
   color: var(--GrayColor-5);
 }
+
 .incident-title {
   text-align: center;
   margin: 2rem 0;
 }
+
 .incident-text {
   letter-spacing: var(--spacing);
   text-align: center;
@@ -392,37 +415,45 @@ h3:hover {
 }
 
 /* anniversary */
+.anni-container {
+  margin: 3rem 0;
+  display: grid;
+  justify-content: center;
+  place-items: center;
+}
+
 
 .anni-title h3 {
   color: var(--clr-secondaryColor-5);
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin: 5rem;
+  text-align: center;
 }
+
 .anni-background {
-  width: 15rem;
-  height: 15rem;
-  background: var(--clr-orangeColor-2);
-  border: 5px solid var(--GrayColor-5);
+  width: 10rem;
+  height: 10rem;
+  background: transparent;
+  border: 2px solid var(--GrayColor-5);
   border-radius: 50%;
   position: relative;
-  /* transform: translatex(%); */
 }
-@media screen and (min-width: 768px) {
-  .anni-background {
-    width: 17rem;
-    height: 17rem;
-  }
-}
+
+
+
 .anni-bold {
-  color: var(--GrayColor-3);
+  color: var(--clr-secondaryColor-5);
   position: absolute;
-  transform: translate(1.9rem, -12rem);
+  transform: translate(2.5rem, -8.2rem);
   font-family: var(--secondaryFont);
   padding: 1rem 0;
+  font-size: 4rem;
 }
+
 .anni-bold h2 {
   text-align: center;
 }
+
 .anni-bold h1 {
   font-size: 3rem;
   text-align: center;
@@ -430,18 +461,72 @@ h3:hover {
 
 .anni-text {
   color: var(--GrayColor-4);
-  margin: 3rem 0;
+  margin: 0 auto;
   font-size: 17px;
   letter-spacing: 0.85px;
   text-transform: capitalize;
+  text-align: center;
 }
-.anniversary {
-  margin: 4rem 0;
+
+
+.anni-highlite {
+  margin: 2rem;
+
+}
+
+.anni-highlite h3 {
+  font-size: 1.5rem;
+  text-align: center;
   transition: var(--transition);
+
 }
+
+.anni-highlite h3:hover {
+  color: var(--clr-secondaryColor-4);
+}
+
+.anni-highlite p {
+  color: var(--clr-secondaryColor-4);
+  align-items: center;
+}
+
+.anniversary {
+  margin: 1rem auto;
+  transition: var(--transition);
+
+}
+
 .anniversary:hover {
-  /* box-shadow: var(--dark-shadow); */
   transform: translatex(2rem);
+}
+
+.anni-img {
+  place-self: center;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .big {
+    font-size: 2.6rem;
+    color: var(--clr-secondaryColor-0);
+    border: 2px solid var(--clr-secondaryColor-0);
+    padding: 1rem 1rem;
+
+  }
+
+
+  .anni-text {
+    margin: 4rem 0;
+  }
+
+  .anni-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+
 }
 
 /* expert */
@@ -453,33 +538,40 @@ h3:hover {
   transition: var(--transition);
   box-shadow: var(--light-shadow);
 }
+
 @media screen and (min-width: 768px) {
   .expert-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
   }
+
   .underline-long {
     margin-top: 2rem;
   }
+
   .extra {
     display: grid;
   }
 }
+
 .expert-container:hover {
   box-shadow: var(--dark-shadow);
   transform: translatex(-1rem);
 }
+
 .expert-title {
   padding: 9px 10px;
   background: var(--GrayColor-3);
 }
+
 .expert-title h4 {
   color: var(--GrayColor-5);
   font-family: var(--secondaryFont);
   font-weight: 400;
   font-size: 1rem;
 }
+
 .expert-text {
   padding: 20px;
   max-width: 40rem;
@@ -488,9 +580,11 @@ h3:hover {
   color: var(--GrayColor-4);
   text-transform: capitalize;
 }
+
 .expert-img {
   object-fit: cover;
 }
+
 .extra {
   display: none;
 }
@@ -504,27 +598,32 @@ h3:hover {
   background: red;
   position: relative;
 }
+
 .offer-imgContainer {
   margin-bottom: 2rem;
   display: grid;
   place-items: center;
 }
+
 .offer-photo {
   z-index: 2;
   width: 11rem;
   position: absolute;
   transform: translate(5%, 0%);
 }
+
 .offer-title {
   text-align: center;
   margin-bottom: 3rem;
   margin-top: 3rem;
   /* padding: 2rem 0; */
 }
+
 .offer-title h3 {
   margin-left: 1rem;
   text-align: center;
 }
+
 .offer {
   margin: -1rem 0;
   line-height: 3rem;
@@ -532,12 +631,15 @@ h3:hover {
   font-size: 15px;
   color: var(--clr-secondaryColor-4);
 }
+
 .offer:hover {
   color: var(--clr-orangeColor-0);
 }
+
 .offer-list {
   padding-bottom: 3rem;
 }
+
 .offer-container {
   background: var(--GrayColor-3);
   padding: 2rem 2rem;
@@ -549,16 +651,20 @@ h3:hover {
   background: var(--clr-orangeColor-2);
   width: 100vw;
 }
+
 .footer p {
   color: white;
   text-transform: capitalize;
 }
+
 .single-footer p {
   transition: var(--transition);
 }
+
 .single-footer p:hover {
   color: #734a00;
 }
+
 .footer-cotainer {
   letter-spacing: var(--spacing);
   margin-top: 1rem;
@@ -576,12 +682,15 @@ h3:hover {
   margin: 2rem 0;
   font-weight: 400;
 }
+
 .information p {
   transition: var(--transition);
 }
+
 .information p:hover {
   color: #734a00;
 }
+
 .footer-sta {
   color: var(--clr-whiteColor);
   padding-bottom: 2rem;
@@ -591,16 +700,21 @@ h3:hover {
   padding-left: 1rem;
   letter-spacing: var(--spacing);
 }
+
 .lanuages p {
   transition: var(--transition);
 }
+
 .languages p:hover {
   color: #734a00;
 }
 
 .footer-img {
   max-width: 15rem;
+  display: block;
+  justify-content: center;
 }
+
 .share-icon h4 {
   text-align: center;
   font-family: var(--secondaryFont);
@@ -624,4 +738,16 @@ h3:hover {
 
 .social-icons a:hover {
   color: var(--clr-orangeColor-2);
+}
+
+.unique-2 {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: var(--clr-secondaryColor-5);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px 0 0 8px;
+  font-size: 16px;
 }
